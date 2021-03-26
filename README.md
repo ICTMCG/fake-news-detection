@@ -3,19 +3,28 @@
 
 This repo is a collection of AWESOME things about fake news detection, including papers, code, etc. Feel free to star and fork.
 
+---
+
 ## Contents
 - [Papers](#paper)
   - [Survey](#survey) 综述
   - [Fact Checking](#fact) 真实性检验
   - [Multi-Modal](#multi-modal) 多模态
+  - [Emotion](#emotion) 情感
+  - [Explainable](#explainable) 可解释
+- [Distinguished Scholars in Fake News Detection](#scholars)
+
+---
 
 ## <span id="paper">Papers</span>
 ### <span id="survey">Survey</span> 综述
-- [False news detection on social media](). ARXIV 2019.
+- [False news detection on social media](https://arxiv.org/pdf/1908.10818.pdf). ARXIV 2019.
 - [A survey on fake news and rumour detection techniques](https://www.sciencedirect.com/science/article/pii/S0020025519304372). Information Sciences, 2019, 497: 38-55.
 - [Detection and resolution of rumours in social media: A survey](https://dl.acm.org/doi/abs/10.1145/3161603). ACM Computing Surveys (CSUR), 2018, 51(2): 1-36.
 - [The Spread of True and False News Online](https://science.sciencemag.org/CONTENT/359/6380/1146.abstract). Science, 2018, 359(6380): 1146-1151.
 - [Fake News Detection on Social Media: A Data Mining Perspective](https://dl.acm.org/doi/abs/10.1145/3137597.3137600?casa_token=Mf0tvofQf7kAAAAA:LgdXVmsJzYxVyrTgrhoFio_zxDXORoh6NNGP4__D64yam0rOKfwdbi__38Jg01U7pC-M19Tkb2NC_BU). ACM SIGKDD explorations newsletter, 2017, 19(1): 22-36.
+
+<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
 ### <span id="fact">Fact Checking</span> 真实性检验
 
@@ -31,6 +40,11 @@ This repo is a collection of AWESOME things about fake news detection, including
 - SIGIR-2018 [The rise of guardians: Fact-checking URL recommendation to combat fake news](https://dl.acm.org/doi/abs/10.1145/3209978.3210037?casa_token=wY-498SHN8EAAAAA:_p67817oi5vgktXQMPr8AyJ3AAOrn7lRoP_UhJ6dCf3WtVUquG499062k2gFJ-lVwbTesFZHzbS5cK0).
   - Find guardians who are willing to spread verified news and stimulate them to disseminate fact-checked news/information with a matrix factorization model.
   - 找到愿意传播经过真实性检验的新闻的保护者，这类人通常会在评论中给出真实新闻的链接。激励他们传播真实新闻。本文提出了一种基于矩阵分解的方法。
+- WSDM-2018 [Leveraging the Crowd to Detect and Reduce the Spread of Fake News and Misinformation](https://dl.acm.org/doi/abs/10.1145/3159652.3159734?casa_token=ZIwfXFyA_GUAAAAA:4hCVbLCZe1O07SvK4ip688MeVzCDcgTVqlofgch_bmIvo0bfUGqli7mCG9tMRToO_6jPN5FFTYC2Aac).
+  - This paper developed a scalable online algorithm, Curb, to select which stories to send for fact checking and when to do so to efficiently reduce the spread of misinformation.
+  - 这篇文章开发了一种可扩展的在线算法Curb，来选择哪些故事进行事实检查以及何时进行检查，以有效地减少错误信息的传播。
+
+<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
 ### <span id="multi-modal">Multi-Modal</span> 多模态
 
@@ -47,7 +61,31 @@ This repo is a collection of AWESOME things about fake news detection, including
   - One of the unique challenges for fake news detection on social media is how to identify fake news on newly emerged events. Most existing methods learn event-specific features that can not be transferred to unseen events. This paper proposed an end-to-end framework named Event Adversarial Neural Network (EANN), which can derive event-invariant features with adversarial learning and thus benefit the detection of fake news on newly arrived events.
   - 在虚假新闻检测问题中有一个特别挑战，如何识别新发生的事件的虚假新闻。大多数现有的方法学习事件特殊的特征，无法迁移到没见过的事件。这篇文章提出了EANN，使用对抗训练提出事件不变的特征，有利于检测新发生的事件上的虚假新闻。
 
-## Distinguished Scholars in Fake News Detection (虚假新闻检测领域杰出学者)
+<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
+
+### <span id="emotion">Emotion</span> 情感
+
+- WWW-2021 [Mining Dual Emotion for Fake News Detection](https://arxiv.org/abs/1903.01728).
+  - This paper explored the relationship between publisher emotion and social emotion in fake news and real news, and proposed a method to model dual emotion (publisher emotion, social emotion) from five aspects, including emotion category, emotional lexicon, emotional intensity, sentiment score, other auxiliary features.
+  - 这篇文章探索了在虚假新闻和真实新闻中新闻发布者的情感和社交情感之间的联系，并且提出了一种方法从五个方面来建模对偶情感，情感类别，情感词典，情感强度，情感分数，其他辅助特征。
+- SIGIR-2019 [Leveraging emotional signals for credibility detection](https://dl.acm.org/doi/abs/10.1145/3331184.3331285?casa_token=GvwK-IepIWIAAAAA:yJKIEOHNHSIB7XcmRH5y9S1-4GqCAgmI5eZ4iDrsm4_HZ2x_2O3T8Sk0s-prWzUBR45fq6BFuNOCZSI).
+  - The role of emotional signals has not yet been explored in existing methods. This paper proposed an LSTM model that incorporates emotional signals (emotional intensity lexicon) extracted from the text of the claims to differentiate between credible and non-credible ones. 
+  - 现有的虚假新闻检测方法还没有探索情感信号的使用。这篇文章提出了一个LSTM模型，使用从claim的文本信息中提取到的情感信号（情感强度词典）来区分可信和不可信的新闻。
+
+<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
+
+### <span id="explainable">Explainable</span> 可解释
+
+- ACL-2020 [GCAN: Graph-aware Co-Attention Networks for Explainable Fake News Detection on Social Media](https://www.aclweb.org/anthology/2020.acl-main.48.pdf).
+  - Given the source short-text tweet and the corresponding sequence of retweet users without text comments, this paper proposed GCAN to predict whether the source tweet is fake or not, and generate explanation by highlighting the evidences on suspicious retweeters and the words they concern. 
+  - 给定原始的短文本推特以及相关的转发用户序列，这篇文章提出了GCAN来预测原始推特是否为虚假的，并且通过标注出可以的转发者和词语来生成解释。
+- KDD-2019 [Defend: Explainable Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3292500.3330935?casa_token=xfpltxWHUwEAAAAA:mifb7BpUrE-nAm4hHpAzW2Gozw8g_xmA2j6UXRzJKm0lAUS0Z8gNEXpE3FRWJnSpeIeKBE4cuB45tYc).
+  - Explainability has been ignored by most existing fake news detection methods. This paper proposed dEFEND to detect fake news by jointly exploring explainable information from news contents and user comments.
+  - 现在大多数虚假新闻检测的方法忽略了可解释的重要性。这篇文章提出了dEFEND来检测虚假新闻。同时考虑了新闻内容和用户评论中的可解释信息。
+
+---
+
+## <span id="scholars">Distinguished Scholars in Fake News Detection</span> (虚假新闻检测领域杰出学者)
 - [Huan Liu](https://www.public.asu.edu/~huanliu/): Professor in Ira A. Fulton Schools of Engineering, Arizona State University. ACM/AAAI/AAAS/IEEE Fellow. [Google scholar](https://scholar.google.com.hk/citations?user=Dzf46C8AAAAJ&hl=zh-CN&oi=ao).
 - [Kai Shu](http://www.cs.iit.edu/~kshu/):  Assistant Professor in the Department of Computer Science at Illinois Institute of Technology. [Google scholar](https://scholar.google.com.hk/citations?user=-6bAV2cAAAAJ&hl=zh-CN).
 - [Juan Cao](http://people.ucas.ac.cn/~caojuan): Professor in Institute of Computing Technology, Chinese Academy of Science. [Google scholar](https://scholar.google.com.hk/citations?hl=zh-CN&user=fSBdNg0AAAAJ).
