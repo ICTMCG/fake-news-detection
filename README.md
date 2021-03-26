@@ -1,22 +1,23 @@
 # Fake News Detection 虚假新闻检测
+[![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT) 
 
 This repo is a collection of AWESOME things about fake news detection, including papers, code, etc. Feel free to star and fork.
 
 ## Contents
 - [Papers](#paper)
-  - [Survey](#survey)
-  - [Fact Checking](#fact)
-  - [Multi-Modal](#multi-modal)
+  - [Survey](#survey) 综述
+  - [Fact Checking](#fact) 真实性检验
+  - [Multi-Modal](#multi-modal) 多模态
 
 ## <span id="paper">Papers</span>
-### <span id="survey">Survey</span>
+### <span id="survey">Survey</span> 综述
 - [False news detection on social media](). ARXIV 2019.
 - [A survey on fake news and rumour detection techniques](https://www.sciencedirect.com/science/article/pii/S0020025519304372). Information Sciences, 2019, 497: 38-55.
 - [Detection and resolution of rumours in social media: A survey](https://dl.acm.org/doi/abs/10.1145/3161603). ACM Computing Surveys (CSUR), 2018, 51(2): 1-36.
 - [The Spread of True and False News Online](https://science.sciencemag.org/CONTENT/359/6380/1146.abstract). Science, 2018, 359(6380): 1146-1151.
 - [Fake News Detection on Social Media: A Data Mining Perspective](https://dl.acm.org/doi/abs/10.1145/3137597.3137600?casa_token=Mf0tvofQf7kAAAAA:LgdXVmsJzYxVyrTgrhoFio_zxDXORoh6NNGP4__D64yam0rOKfwdbi__38Jg01U7pC-M19Tkb2NC_BU). ACM SIGKDD explorations newsletter, 2017, 19(1): 22-36.
 
-### <span id="fact">Fact Checking</span>
+### <span id="fact">Fact Checking</span> 真实性检验
 
 - EMNLP-2020 [Where Are the Facts? Searching for Fact-checked Information to Alleviate the Spread of Fake News](https://www.aclweb.org/anthology/2020.emnlp-main.621.pdf).
   - To stop users from spreading fake news, this paper proposed a novel framework to search for fact-checking articles which is related to original poster. The search can directly warn fake news posters and online users about misinformation, discourage them from spreading fake news.
@@ -31,7 +32,7 @@ This repo is a collection of AWESOME things about fake news detection, including
   - Find guardians who are willing to spread verified news and stimulate them to disseminate fact-checked news/information with a matrix factorization model.
   - 找到愿意传播经过真实性检验的新闻的保护者，这类人通常会在评论中给出真实新闻的链接。激励他们传播真实新闻。本文提出了一种基于矩阵分解的方法。
 
-### <span id="multi-modal">Multi-Modal</span>
+### <span id="multi-modal">Multi-Modal</span> 多模态
 
 - EMNLP-2020 [Detecting Cross-Modal Inconsistency to Defend Against Neural Fake News](https://www.aclweb.org/anthology/2020.emnlp-main.163.pdf).
   - This paper proposed a novel problem defence against neural fake news with images and captions. To circumvent this problem, they present DIDAN,which exploits possible semantic inconsistencies between the text and image/captions to detect machine-generated articles. 
