@@ -8,10 +8,12 @@ This repo is a collection of AWESOME things about fake news detection, including
 ## Contents
 - [Papers](#paper)
   - [Survey](#survey) 综述
+  - [Social Context](#social) 社交上下文
   - [Fact Checking](#fact) 真实性检验
   - [Multi-Modal](#multi-modal) 多模态
   - [Emotion](#emotion) 情感
   - [Explainable](#explainable) 可解释
+  - [Transfer Learning](#transfer) 迁移学习
 - [Distinguished Scholars in Fake News Detection](#scholars)
 
 ---
@@ -23,6 +25,27 @@ This repo is a collection of AWESOME things about fake news detection, including
 - [Detection and resolution of rumours in social media: A survey](https://dl.acm.org/doi/abs/10.1145/3161603). ACM Computing Surveys (CSUR), 2018, 51(2): 1-36.
 - [The Spread of True and False News Online](https://science.sciencemag.org/CONTENT/359/6380/1146.abstract). Science, 2018, 359(6380): 1146-1151.
 - [Fake News Detection on Social Media: A Data Mining Perspective](https://dl.acm.org/doi/abs/10.1145/3137597.3137600?casa_token=Mf0tvofQf7kAAAAA:LgdXVmsJzYxVyrTgrhoFio_zxDXORoh6NNGP4__D64yam0rOKfwdbi__38Jg01U7pC-M19Tkb2NC_BU). ACM SIGKDD explorations newsletter, 2017, 19(1): 22-36.
+
+
+<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
+
+### <span id="social">Social Context</span> 社交上下文
+- CIKM-2020 [FANG : Leveraging Social Context for Fake News Detection Using Graph Representation](https://dl.acm.org/doi/abs/10.1145/3340531.3412046?casa_token=33FpLHu6h20AAAAA:fc2L3COGdQCca7fS2l4rOjcP_LzmDMVI1fROs9Yxi0m7xTuyQUpec9sm6MZe0_Yli7Vo4tcDh6nURN8).
+  - This paper proposed Factual News Graph (FANG) for fake news detection, which is scalable in training as it does not have to maintain all nodes, and it is efficient at inference time, without the need to re-process the entire graph.
+  - 这篇文章提出了FANG来解决虚假新闻检测问题，FANG在训练中具有可扩展性，不必维护所有节点，并且在推理时非常高效，而无需重新处理整个图。
+- ICDM-2020 [Adversarial Active Learning based Heterogeneous Graph Neural Network for Fake News Detection](https://ieeexplore.ieee.org/abstract/document/9338358/).
+  - This paper attempted to solve the fake news detection problem with the support of a news-oriented HIN and proposed a novel method AA-HGNN. AA-HGNN utilizes an active learning framework to enhance learning performance, especially when facing the paucity of labeled data.
+  - 这篇文章尝试基于新闻导向的异构信息网络解决虚假新闻检测的方法，并且提出了一个新的方法AA-HGNN。AA-HGNN使用主动学习的框架来增强学习表现，特别是面对标签数据不足的情况。
+- WSDM-2019 [Beyond News Contents : The Role of Social Context for Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3289600.3290994?casa_token=vzRcFcZbogkAAAAA:CgTc3CqhxgZ3JqqwPLrCAz_vVP2wShHGZvZnLZdeM2Evss5Uqu4-L1UUhLVB-G62_hfT-WcqZLW52gY)
+  - This paper proposed a tri-relationship embedding framework (tensor factorization method) TriFN, which models publisher-news relations and user-news interactions simultaneously for fake news classification. 
+  - 这篇文章提出了一种三者关系embedding的框架TriFN(一种tensor分解的方法)，同时建模新闻发布者和新闻的关系，用户和新闻的交互来检测虚假新闻。
+- AAAI-2018 [Early Detection of Fake News on Social Media Through Propagation Path Classification with Recurrent and Convolutional Networks](https://ojs.aaai.org/index.php/AAAI/article/view/11268).
+  - This paper first models the propagation path of each news story as a multivariate time series and builds a time series classifier that incorporates both recurrent and convolutional networks which capture the global and local variations of user characteristics along the propagation path respectively, to detect fake news.
+  - 这篇文章首先将每个新闻故事的传播路径建模为一个多元时间序列，并建立了一个时间序列分类器，该分类器结合了RNN和CNN，分别捕获了沿传播路径的用户特征的全局和局部变化，以检测假新闻。
+- CIKM-2017 [CSI : A Hybrid Deep Model for Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3132847.3132877?casa_token=qUOs7PlAOKYAAAAA:wvXMJ4nzbcW6CWGTJCREzIvR8vkxXe4rt7tlI1-k-_GANPG87nPv8Z2iaCQs0x_uVGlaPkbnLzMBuO4).
+  - This paper proposed a hybrid model that combines the text of an article, the user response it receives, and the source users promoting it for a more accurate and automated prediction.
+  - 这篇文章提出了一个混合模型，组合了文章的文本，用户的反馈，传播它的用户，来实现一个更准确自动的预测。
+
 
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
@@ -82,6 +105,14 @@ This repo is a collection of AWESOME things about fake news detection, including
 - KDD-2019 [Defend: Explainable Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3292500.3330935?casa_token=xfpltxWHUwEAAAAA:mifb7BpUrE-nAm4hHpAzW2Gozw8g_xmA2j6UXRzJKm0lAUS0Z8gNEXpE3FRWJnSpeIeKBE4cuB45tYc).
   - Explainability has been ignored by most existing fake news detection methods. This paper proposed dEFEND to detect fake news by jointly exploring explainable information from news contents and user comments.
   - 现在大多数虚假新闻检测的方法忽略了可解释的重要性。这篇文章提出了dEFEND来检测虚假新闻。同时考虑了新闻内容和用户评论中的可解释信息。
+
+<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
+
+### <span id="transfer">Transfer Learning</span> 迁移学习
+
+- EMNLP-2019 [Different Absorption from the Same Sharing : Sifted Multi-task Learning for Fake News Detection](https://www.aclweb.org/anthology/D19-1471/).
+  - This paper utilizes stance detection task to help fake news detection. They designed a sifted multi-task learning method with a selected sharing layer for fake news detection. The selected sharing layer adopts gate mechanism and attention mechanism to filter and select shared feature flows between tasks.
+  - 本文利用观点检测任务来辅助虚假新闻检测。他们设计了一种筛选的多任务学习方法，并使用了可选共享层来检测虚假新闻。可选共享层采用门机制和注意力机制对任务之间的共享特征流进行过滤和选择。
 
 ---
 
