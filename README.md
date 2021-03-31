@@ -9,9 +9,12 @@ This repo is a collection of AWESOME things about fake news detection, including
 - [Papers](#paper)
   - [Survey](#survey) 综述
   - [Social Context](#social) 社交上下文
+  - [News Contents](#contents) 新闻内容
+    - [Multi-Modal](#multi-modal) 多模态
+    - [Emotion](#emotion) 情感
+    - [Style](#style) 风格
+    - [Discourse Stucture](#discourse) 语篇结构
   - [Fact Checking](#fact) 真实性检验
-  - [Multi-Modal](#multi-modal) 多模态
-  - [Emotion](#emotion) 情感
   - [Explainable](#explainable) 可解释
   - [Transfer Learning](#transfer) 迁移学习
 - [Distinguished Scholars in Fake News Detection](#scholars)
@@ -30,7 +33,7 @@ This repo is a collection of AWESOME things about fake news detection, including
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
 ### <span id="social">Social Context</span> 社交上下文
-- CIKM-2020 [FANG : Leveraging Social Context for Fake News Detection Using Graph Representation](https://dl.acm.org/doi/abs/10.1145/3340531.3412046?casa_token=33FpLHu6h20AAAAA:fc2L3COGdQCca7fS2l4rOjcP_LzmDMVI1fROs9Yxi0m7xTuyQUpec9sm6MZe0_Yli7Vo4tcDh6nURN8).
+- CIKM-2020 [FANG : Leveraging Social Context for Fake News Detection Using Graph Representation](https://dl.acm.org/doi/abs/10.1145/3340531.3412046?casa_token=33FpLHu6h20AAAAA:fc2L3COGdQCca7fS2l4rOjcP_LzmDMVI1fROs9Yxi0m7xTuyQUpec9sm6MZe0_Yli7Vo4tcDh6nURN8) [code](https://github.com/nguyenvanhoang7398/FANG).
   - This paper proposed Factual News Graph (FANG) for fake news detection, which is scalable in training as it does not have to maintain all nodes, and it is efficient at inference time, without the need to re-process the entire graph.
   - 这篇文章提出了FANG来解决虚假新闻检测问题，FANG在训练中具有可扩展性，不必维护所有节点，并且在推理时非常高效，而无需重新处理整个图。
 - ICDM-2020 [Adversarial Active Learning based Heterogeneous Graph Neural Network for Fake News Detection](https://ieeexplore.ieee.org/abstract/document/9338358/).
@@ -46,6 +49,51 @@ This repo is a collection of AWESOME things about fake news detection, including
   - This paper proposed a hybrid model that combines the text of an article, the user response it receives, and the source users promoting it for a more accurate and automated prediction.
   - 这篇文章提出了一个混合模型，组合了文章的文本，用户的反馈，传播它的用户，来实现一个更准确自动的预测。
 
+<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
+
+### <span id="contents">News Contents</span> 新闻内容
+
+#### <span id="multi-modal">Multi-Modal</span> 多模态
+
+- EMNLP-2020 [Detecting Cross-Modal Inconsistency to Defend Against Neural Fake News](https://www.aclweb.org/anthology/2020.emnlp-main.163.pdf).
+  - This paper proposed a novel problem defence against neural fake news with images and captions. To circumvent this problem, they present DIDAN,which exploits possible semantic inconsistencies between the text and image/captions to detect machine-generated articles. 
+  - 这篇文章提出了一个新的问题，如何防御带有图片和图片描述的虚假新闻。为了解决这个问题，他们提出了DIDAN，使用文本和图片、图片描述之间的语义一致性来检测机器生成的文章。
+- ICDM-2019 [Exploiting Multi-domain Visual Information for Fake News Detection](https://ieeexplore.ieee.org/abstract/document/8970940/).
+  - Fake-news images may have significantly different characteristics from real-news images at both physical and semantic levels, which can be clearly reflected in the frequency and pixel domain. This paper proposed a novel framework Multi-domain Visual Neural Network (MVNN) to fuse the visual information of frequency and pixel domains for detecting fake news.
+  - 虚假新闻中的图片和真实新闻的图片在物理和语义级别有很大的不同，这可以反应在频域和像素域。这篇文章提出了MVNN来融合频域和像素域的视觉信息来帮助欺诈检测。
+- WWW-2019 [MVAE : Multimodal Variational Autoencoder for Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3308558.3313552?casa_token=tzDWRQ_VVxEAAAAA:Fc3ubDseJsk05pUdznqtA4cDD9BGemHHh8A1T6Nzur8qa0SU8SQY8O7_KRoj8tE_Ah75p8sslKjo4bU).
+  - A shortcoming of the current approaches for the detection of fake news is their inability to learn a shared representation of multimodal (textual + visual) information. This paper proposed Multimodal Variational Autoencoder (MVAE), which uses a bimodal variational autoencoder for the task of fake news detection.
+  - 现在的虚假新闻检测的方法有一个缺点，针对多模态的信息，他们不能学习一个共享的表示。这篇文章提出了MVAE，使用一个双模态的VAE（变分自动编码机）。
+- CIKM-2018 [Rumor detection with hierarchical social attention network](https://dl.acm.org/doi/abs/10.1145/3269206.3271709?casa_token=5ODcLmf4aHkAAAAA:vyQxpSmSkaNDQbzuqUL81HeLeKncNpLa8wEOxANLqGzRXU4W1SZ05Wwgo7BZgegvtW_v5KMt0-UHcmI).
+  - A news usually contains a source post and a set of related posts. This paper divided related posts into several subevent according to timestamp, and proposed a hierarchical structure to detect rumor.
+  - 一个新闻通常包含原始帖子和一些相关回复转发帖子。这篇文章将相关帖子根据时间戳划分为多个子事件段，并且提出了一个层次结构来检测谣言。
+- KDD-2018 [EANN: Event Adversarial Neural Networks for Multi-Modal Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3219819.3219903?casa_token=_1c4Ao5K0moAAAAA:jUDfxV9HoKVeRQnGwXYI6oGEm1MMOusLGjPiZjEAOm94MVld0ntG44G4kwdK_qLtipJa32ngFQE995U).
+  - One of the unique challenges for fake news detection on social media is how to identify fake news on newly emerged events. Most existing methods learn event-specific features that can not be transferred to unseen events. This paper proposed an end-to-end framework named Event Adversarial Neural Network (EANN), which can derive event-invariant features with adversarial learning and thus benefit the detection of fake news on newly arrived events.
+  - 在虚假新闻检测问题中有一个特别挑战，如何识别新发生的事件的虚假新闻。大多数现有的方法学习事件特殊的特征，无法迁移到没见过的事件。这篇文章提出了EANN，使用对抗训练提出事件不变的特征，有利于检测新发生的事件上的虚假新闻。
+- ACMMM-2017 [Multimodal fusion with recurrent neural networks for rumor detection on microblogs](https://dl.acm.org/doi/abs/10.1145/3123266.3123454?casa_token=YezZ9B--TsAAAAAA:-tXSt-GU3owhdAj1Oaa5PEqwCdO0kfIXfL_VDQJavItIcAswt_rAyxBDucIJxEAXxj5pdbMTT5lYH7Q).
+  - This paper proposed a novel Recurrent Neural Network with an attention mechanism (att-RNN) to fuse multimodal features for effective rumor detection.
+  - 这篇文章提出了一个新的基于RNN和attention的方法，来融合多模态特征来进行高效的谣言检测。
+
+#### <span id="emotion">Emotion</span> 情感
+
+- WWW-2021 [Mining Dual Emotion for Fake News Detection](https://arxiv.org/abs/1903.01728).
+  - This paper explored the relationship between publisher emotion and social emotion in fake news and real news, and proposed a method to model dual emotion (publisher emotion, social emotion) from five aspects, including emotion category, emotional lexicon, emotional intensity, sentiment score, other auxiliary features.
+  - 这篇文章探索了在虚假新闻和真实新闻中新闻发布者的情感和社交情感之间的联系，并且提出了一种方法从五个方面来建模对偶情感，情感类别，情感词典，情感强度，情感分数，其他辅助特征。
+- SIGIR-2019 [Leveraging emotional signals for credibility detection](https://dl.acm.org/doi/abs/10.1145/3331184.3331285?casa_token=GvwK-IepIWIAAAAA:yJKIEOHNHSIB7XcmRH5y9S1-4GqCAgmI5eZ4iDrsm4_HZ2x_2O3T8Sk0s-prWzUBR45fq6BFuNOCZSI).
+  - The role of emotional signals has not yet been explored in existing methods. This paper proposed an LSTM model that incorporates emotional signals (emotional intensity lexicon) extracted from the text of the claims to differentiate between credible and non-credible ones. 
+  - 现有的虚假新闻检测方法还没有探索情感信号的使用。这篇文章提出了一个LSTM模型，使用从claim的文本信息中提取到的情感信号（情感强度词典）来区分可信和不可信的新闻。
+
+#### <span id="style">Style</span> 风格
+- ACL-2018 [A stylometric inquiry into hyperpartisan and fake news](https://www.aclweb.org/anthology/P18-1022.pdf).
+  - This paper demonstrated the importance of style for fake news detection.
+  - 这篇文章验证了风格对于虚假新闻检测的重要性
+
+#### <span id="discourse">Discourse stucture</span> 语篇结构
+- NAACL-2019 [Learning hierarchical discourse-level structure for fake news detection](https://arxiv.org/abs/1903.07389).
+  - This paper proposed a novel method to study automatic document structure learning for fake news detection, and detect fake news with a hierarchical structure.
+  - 这篇文章提出了一个新的方法可以自动抓获文档结构，并且使用一个层次结构检测虚假新闻。
+  
+
 
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
@@ -54,6 +102,9 @@ This repo is a collection of AWESOME things about fake news detection, including
 - EMNLP-2020 [Where Are the Facts? Searching for Fact-checked Information to Alleviate the Spread of Fake News](https://www.aclweb.org/anthology/2020.emnlp-main.621.pdf).
   - To stop users from spreading fake news, this paper proposed a novel framework to search for fact-checking articles which is related to original poster. The search can directly warn fake news posters and online users about misinformation, discourage them from spreading fake news.
   - 这篇文章提出了一个新的框架，检索和原始帖子相关的经过真实性检验的文章，并且贴出这些文章来警告用户这可能是虚假新闻来组织虚假新闻的传播。
+- ACL-2020 [Fine-grained Fact Verification with Kernel Graph Attention Network](https://www.aclweb.org/anthology/2020.acl-main.655/).
+  - This paper proposed Kernel Graph Attention Network (KGAT). KGAT introduces node kernels, which better measure the importance of the evidence node, and edge kernels, which conduct fine-grained evidence propagation in the graph.
+  - 本文提出了KGAT。 KGAT引入了可以更好地衡量证据节点重要性的节点核，以及可以在图中进行细粒度证据传播的边核。
 - SIGIR-2019 [Learning from fact-checkers: analysis and generation of fact-checking language](https://dl.acm.org/doi/abs/10.1145/3331184.3331248?casa_token=DUE-x5HZNywAAAAA:ZmQO0tm5NXc6ibbo6898F5f8wZcIFL2HDhy8KSjmnSy2k9ArFi5Y2Ew450lLXPMrLoIY9YfmeNCIkn0).
   - Fact-checkers refute the misinformation by replying to the original poster and provides a fact-checking article as a supporting evidence. This paper focuses on generating responses for fact-checkers with a GRU-based generative model.
   - fact-checker会在别人的帖子下回复原始真实文章作为证据来驳斥错误信息。这篇文章旨在为fact-checker生成回复的句子来鼓励fack-checker进行更多的活动。提出了一个基于GRU的生成模型。
@@ -67,33 +118,7 @@ This repo is a collection of AWESOME things about fake news detection, including
   - This paper developed a scalable online algorithm, Curb, to select which stories to send for fact checking and when to do so to efficiently reduce the spread of misinformation.
   - 这篇文章开发了一种可扩展的在线算法Curb，来选择哪些故事进行事实检查以及何时进行检查，以有效地减少错误信息的传播。
 
-<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
-### <span id="multi-modal">Multi-Modal</span> 多模态
-
-- EMNLP-2020 [Detecting Cross-Modal Inconsistency to Defend Against Neural Fake News](https://www.aclweb.org/anthology/2020.emnlp-main.163.pdf).
-  - This paper proposed a novel problem defence against neural fake news with images and captions. To circumvent this problem, they present DIDAN,which exploits possible semantic inconsistencies between the text and image/captions to detect machine-generated articles. 
-  - 这篇文章提出了一个新的问题，如何防御带有图片和图片描述的虚假新闻。为了解决这个问题，他们提出了DIDAN，使用文本和图片、图片描述之间的语义一致性来检测机器生成的文章。
-- ICDM-2019 [Exploiting Multi-domain Visual Information for Fake News Detection](https://ieeexplore.ieee.org/abstract/document/8970940/).
-  - Fake-news images may have significantly different characteristics from real-news images at both physical and semantic levels, which can be clearly reflected in the frequency and pixel domain. This paper proposed a novel framework Multi-domain Visual Neural Network (MVNN) to fuse the visual information of frequency and pixel domains for detecting fake news.
-  - 虚假新闻中的图片和真实新闻的图片在物理和语义级别有很大的不同，这可以反应在频域和像素域。这篇文章提出了MVNN来融合频域和像素域的视觉信息来帮助欺诈检测。
-- WWW-2019 [MVAE : Multimodal Variational Autoencoder for Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3308558.3313552?casa_token=tzDWRQ_VVxEAAAAA:Fc3ubDseJsk05pUdznqtA4cDD9BGemHHh8A1T6Nzur8qa0SU8SQY8O7_KRoj8tE_Ah75p8sslKjo4bU).
-  - A shortcoming of the current approaches for the detection of fake news is their inability to learn a shared representation of multimodal (textual + visual) information. This paper proposed Multimodal Variational Autoencoder (MVAE), which uses a bimodal variational autoencoder for the task of fake news detection.
-  - 现在的虚假新闻检测的方法有一个缺点，针对多模态的信息，他们不能学习一个共享的表示。这篇文章提出了MVAE，使用一个双模态的VAE（变分自动编码机）。
-- KDD-2018 [EANN: Event Adversarial Neural Networks for Multi-Modal Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3219819.3219903?casa_token=_1c4Ao5K0moAAAAA:jUDfxV9HoKVeRQnGwXYI6oGEm1MMOusLGjPiZjEAOm94MVld0ntG44G4kwdK_qLtipJa32ngFQE995U).
-  - One of the unique challenges for fake news detection on social media is how to identify fake news on newly emerged events. Most existing methods learn event-specific features that can not be transferred to unseen events. This paper proposed an end-to-end framework named Event Adversarial Neural Network (EANN), which can derive event-invariant features with adversarial learning and thus benefit the detection of fake news on newly arrived events.
-  - 在虚假新闻检测问题中有一个特别挑战，如何识别新发生的事件的虚假新闻。大多数现有的方法学习事件特殊的特征，无法迁移到没见过的事件。这篇文章提出了EANN，使用对抗训练提出事件不变的特征，有利于检测新发生的事件上的虚假新闻。
-
-<hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
-
-### <span id="emotion">Emotion</span> 情感
-
-- WWW-2021 [Mining Dual Emotion for Fake News Detection](https://arxiv.org/abs/1903.01728).
-  - This paper explored the relationship between publisher emotion and social emotion in fake news and real news, and proposed a method to model dual emotion (publisher emotion, social emotion) from five aspects, including emotion category, emotional lexicon, emotional intensity, sentiment score, other auxiliary features.
-  - 这篇文章探索了在虚假新闻和真实新闻中新闻发布者的情感和社交情感之间的联系，并且提出了一种方法从五个方面来建模对偶情感，情感类别，情感词典，情感强度，情感分数，其他辅助特征。
-- SIGIR-2019 [Leveraging emotional signals for credibility detection](https://dl.acm.org/doi/abs/10.1145/3331184.3331285?casa_token=GvwK-IepIWIAAAAA:yJKIEOHNHSIB7XcmRH5y9S1-4GqCAgmI5eZ4iDrsm4_HZ2x_2O3T8Sk0s-prWzUBR45fq6BFuNOCZSI).
-  - The role of emotional signals has not yet been explored in existing methods. This paper proposed an LSTM model that incorporates emotional signals (emotional intensity lexicon) extracted from the text of the claims to differentiate between credible and non-credible ones. 
-  - 现有的虚假新闻检测方法还没有探索情感信号的使用。这篇文章提出了一个LSTM模型，使用从claim的文本信息中提取到的情感信号（情感强度词典）来区分可信和不可信的新闻。
 
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
@@ -109,10 +134,21 @@ This repo is a collection of AWESOME things about fake news detection, including
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
 ### <span id="transfer">Transfer Learning</span> 迁移学习
-
+- AAAI-2021 [Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data](Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data).
+  - The performance of fake news detection methods generally drops if news records are coming from different domains, especially for domains that are unseen or rarely-seen during training. Under the setting of unknown domain label, this paper proposed a method to discover domain label and a domain-specific and domain-shared structure to detect fake news.
+  - 如果新的记录来自不同领域，现有的虚假新闻检测方法效果会下降，尤其是该领域在训练时没有见过。在不知道领域标签的设定下，这篇文章提出了一个发现domain label的方法，以及一个领域特定和领域共享的结构来检测虚假新闻。
+- KDD-2020 [DETERRENT: Knowledge Guided Graph Attention Network for Detecting Healthcare Misinformation](https://dl.acm.org/doi/abs/10.1145/3394486.3403092?casa_token=xxQDHHtbbbMAAAAA:akPj6Pmd2_0HwWWZOtM3k3OeeUd829CDJwzDgElElvTqOCjHuRjM92haLZ3lFZ-vAR6w4f5BclyPf_s).
+  - This paper leveraged on the additional information from medical knowledge graph to help detect healthcare misinformation. In addition, the proposed method is capable of providing useful explanations for the results of detection.
+  - 这篇文章利用额外的医学知识图谱的信息来帮助检测医疗保健错误信息。另外，提出的方法可以为检测的结果提供解释。
 - EMNLP-2019 [Different Absorption from the Same Sharing : Sifted Multi-task Learning for Fake News Detection](https://www.aclweb.org/anthology/D19-1471/).
   - This paper utilizes stance detection task to help fake news detection. They designed a sifted multi-task learning method with a selected sharing layer for fake news detection. The selected sharing layer adopts gate mechanism and attention mechanism to filter and select shared feature flows between tasks.
   - 本文利用观点检测任务来辅助虚假新闻检测。他们设计了一种筛选的多任务学习方法，并使用了可选共享层来检测虚假新闻。可选共享层采用门机制和注意力机制对任务之间的共享特征流进行过滤和选择。
+- WWW-2019 [A topic-agnostic approach for identifying fake news pages](https://dl.acm.org/doi/abs/10.1145/3308560.3316739?casa_token=yADZC7xsZswAAAAA:WdPv6azaEkDV3rvkfdEtzm4_KBzTZgufpRKzR6OaXpo25eVI_75nPCg5JF2aHefyaDImxNl-30KSYYA).
+  - An important challenge for existing approaches comes from the dynamic nature of news: as new political events are covered, topics and discourse constantly change and thus, a classifier trained using content from articles published at a given time is likely to become ineffective in the future. To address this challenge, this paper proposed a topic-agnostic (TAG) classification strategy that uses topic-agnostic (linguistic and web-markup) features to identify fake news pages.
+  - 现有虚假新闻检测的方法的一个重要挑战来自新闻的动态性质：随着报道新的政治事件，话题和话语不断变化，因此，使用给定时间发表的文章内容进行训练的分类器预测将来可能会失效。为了解决这一挑战，本文提出了一种与主题无关的（TAG）分类策略，该策略使用与主题无关的（语言和Web标记）特征来识别假新闻页面。
+- WWW-2018 [Detect Rumor and Stance Jointly by Neural Multi-task Learning](https://dl.acm.org/doi/abs/10.1145/3184558.3188729?casa_token=y_PooBtZLeEAAAAA%3AFc0eA5ID4GRn6KfmAcAR4bohcAIpYvKvlUC36l71-ub5pUgJOyfqTWke06i3H-Ux92CbIPGYqq-Klds).
+  - This paper argues that rumor detection and stance classification should be treated as a joint, collaborative effort, considering the strong connections between the veracity of claim and the stances expressed in responsive posts. They proposed a joint framework which capture both task-specific and task-invariant features.
+  - 本文认为，谣言检测与立场分类之间有着的紧密联系，因此将谣言发现和立场分类联合训练。 他们提出了一个联合框架，该框架同时捕获了任务特定和任务不变的特征。
 
 ---
 
