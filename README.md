@@ -155,12 +155,12 @@ This repo is a collection of AWESOME things about fake news detection, including
 
 ## <span id="datasets">Datasets</span>
 
-[FacebookHoax](https://github.com/gabll/some-like-it-hoax) [Some like it hoax: Automated fake news detection in social networks](https://arxiv.org/abs/1704.07506)
-[BuzzFeedNews](https://github.com/BuzzFeedNews/2016-10-facebook-fact-check) [Hyperpartisan Facebook Pages Are Publishing False And Misleading Information At An Alarming Rate](https://www.buzzfeednews.com/article/craigsilverman/partisan-fb-pages-analysis)
-[LIAR](https://www.cs.ucsb.edu/˜william/data/liar_dataset.zip) [Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data](https://www.aclweb.org/anthology/P17-2067.pdf) ACL2017
-[CoAID](https://github.com/cuilimeng/CoAID) [CoAID: COVID-19 Healthcare Misinformation Dataset](https://arxiv.org/pdf/2006.00885.pdf)
-[FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet) [FakeNewsNet: A Data Repository with News Content, Social Context, and Spatiotemporal Information for Studying Fake News on Social Media](https://arxiv.org/pdf/1809.01286) Big Data 2020
-[FakeHealth](https://doi.org/10.5281/zenodo.3606757) [Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository](https://ojs.aaai.org/index.php/ICWSM/article/download/7350/7204/) AAAI2021
+- [FacebookHoax](https://github.com/gabll/some-like-it-hoax) [Some like it hoax: Automated fake news detection in social networks](https://arxiv.org/abs/1704.07506)
+- [BuzzFeedNews](https://github.com/BuzzFeedNews/2016-10-facebook-fact-check) [Hyperpartisan Facebook Pages Are Publishing False And Misleading Information At An Alarming Rate](https://www.buzzfeednews.com/article/craigsilverman/partisan-fb-pages-analysis)
+- [LIAR](https://www.cs.ucsb.edu/˜william/data/liar_dataset.zip) [Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data](https://www.aclweb.org/anthology/P17-2067.pdf) ACL2017
+- [CoAID](https://github.com/cuilimeng/CoAID) [CoAID: COVID-19 Healthcare Misinformation Dataset](https://arxiv.org/pdf/2006.00885.pdf)
+- [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet) [FakeNewsNet: A Data Repository with News Content, Social Context, and Spatiotemporal Information for Studying Fake News on Social Media](https://arxiv.org/pdf/1809.01286) Big Data 2020
+- [FakeHealth](https://doi.org/10.5281/zenodo.3606757) [Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository](https://ojs.aaai.org/index.php/ICWSM/article/download/7350/7204/) AAAI2021
 
 ---
 
