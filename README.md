@@ -17,6 +17,7 @@ This repo is a collection of AWESOME things about fake news detection, including
   - [Fact Checking](#fact) 真实性检验
   - [Explainable](#explainable) 可解释
   - [Transfer Learning](#transfer) 迁移学习
+- [Datasets](#datasets)
 - [Distinguished Scholars in Fake News Detection](#scholars)
 
 ---
@@ -149,6 +150,17 @@ This repo is a collection of AWESOME things about fake news detection, including
 - WWW-2018 [Detect Rumor and Stance Jointly by Neural Multi-task Learning](https://dl.acm.org/doi/abs/10.1145/3184558.3188729?casa_token=y_PooBtZLeEAAAAA%3AFc0eA5ID4GRn6KfmAcAR4bohcAIpYvKvlUC36l71-ub5pUgJOyfqTWke06i3H-Ux92CbIPGYqq-Klds).
   - This paper argues that rumor detection and stance classification should be treated as a joint, collaborative effort, considering the strong connections between the veracity of claim and the stances expressed in responsive posts. They proposed a joint framework which capture both task-specific and task-invariant features.
   - 本文认为，谣言检测与立场分类之间有着的紧密联系，因此将谣言发现和立场分类联合训练。 他们提出了一个联合框架，该框架同时捕获了任务特定和任务不变的特征。
+
+---
+
+## <span id="datasets">Datasets</span>
+
+[FacebookHoax](https://github.com/gabll/some-like-it-hoax) [Some like it hoax: Automated fake news detection in social networks](https://arxiv.org/abs/1704.07506)
+[BuzzFeedNews](https://github.com/BuzzFeedNews/2016-10-facebook-fact-check) [Hyperpartisan Facebook Pages Are Publishing False And Misleading Information At An Alarming Rate](https://www.buzzfeednews.com/article/craigsilverman/partisan-fb-pages-analysis)
+[LIAR](https://www.cs.ucsb.edu/˜william/data/liar_dataset.zip) [Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data](https://www.aclweb.org/anthology/P17-2067.pdf) ACL2017
+[CoAID](https://github.com/cuilimeng/CoAID) [CoAID: COVID-19 Healthcare Misinformation Dataset](https://arxiv.org/pdf/2006.00885.pdf)
+[FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet) [FakeNewsNet: A Data Repository with News Content, Social Context, and Spatiotemporal Information for Studying Fake News on Social Media](https://arxiv.org/pdf/1809.01286) Big Data 2020
+[FakeHealth](https://doi.org/10.5281/zenodo.3606757) [Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository](https://ojs.aaai.org/index.php/ICWSM/article/download/7350/7204/) AAAI2021
 
 ---
 
