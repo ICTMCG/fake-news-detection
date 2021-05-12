@@ -9,7 +9,7 @@ This repo is a collection of AWESOME things about fake news detection, including
 - [Papers](#paper)
   - [Survey](#survey) 综述
   - [Social Context](#social) 社交上下文
-  - [News Contents](#contents) 新闻内容
+  - [News Contents](#content-base) 新闻内容
     - [Multi-Modal](#multi-modal) 多模态
     - [Emotion](#emotion) 情感
     - [Style](#style) 风格
@@ -24,16 +24,17 @@ This repo is a collection of AWESOME things about fake news detection, including
 
 ## <span id="paper">Papers</span>
 ### <span id="survey">Survey</span> 综述
-- [False news detection on social media](https://arxiv.org/pdf/1908.10818.pdf). ARXIV 2019.
 - [A survey on fake news and rumour detection techniques](https://www.sciencedirect.com/science/article/pii/S0020025519304372). Information Sciences, 2019, 497: 38-55.
 - [Detection and resolution of rumours in social media: A survey](https://dl.acm.org/doi/abs/10.1145/3161603). ACM Computing Surveys (CSUR), 2018, 51(2): 1-36.
 - [The Spread of True and False News Online](https://science.sciencemag.org/CONTENT/359/6380/1146.abstract). Science, 2018, 359(6380): 1146-1151.
 - [Fake News Detection on Social Media: A Data Mining Perspective](https://dl.acm.org/doi/abs/10.1145/3137597.3137600?casa_token=Mf0tvofQf7kAAAAA:LgdXVmsJzYxVyrTgrhoFio_zxDXORoh6NNGP4__D64yam0rOKfwdbi__38Jg01U7pC-M19Tkb2NC_BU). ACM SIGKDD explorations newsletter, 2017, 19(1): 22-36.
 
-
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
 ### <span id="social">Social Context</span> 社交上下文
+- SIGIR-2021 [User Preference-aware Fake News Detection](https://arxiv.org/pdf/2104.12259) [code](https://github.com/safe-graph/GNN-FakeNews)
+  - A user is more likely to spread a piece of fake news when it confirms his/her existing beliefs/preferences. This paper studied the novel problem of exploiting user preference for fake news detection.
+  - 用户更可能传播他感兴趣的虚假新闻。这篇文章研究一个新的问题，在虚假新闻检测中利用用户偏好信息。
 - CIKM-2020 [FANG : Leveraging Social Context for Fake News Detection Using Graph Representation](https://dl.acm.org/doi/abs/10.1145/3340531.3412046?casa_token=33FpLHu6h20AAAAA:fc2L3COGdQCca7fS2l4rOjcP_LzmDMVI1fROs9Yxi0m7xTuyQUpec9sm6MZe0_Yli7Vo4tcDh6nURN8) [code](https://github.com/nguyenvanhoang7398/FANG).
   - This paper proposed Factual News Graph (FANG) for fake news detection, which is scalable in training as it does not have to maintain all nodes, and it is efficient at inference time, without the need to re-process the entire graph.
   - 这篇文章提出了FANG来解决虚假新闻检测问题，FANG在训练中具有可扩展性，不必维护所有节点，并且在推理时非常高效，而无需重新处理整个图。
@@ -49,10 +50,13 @@ This repo is a collection of AWESOME things about fake news detection, including
 - CIKM-2017 [CSI : A Hybrid Deep Model for Fake News Detection](https://dl.acm.org/doi/abs/10.1145/3132847.3132877?casa_token=qUOs7PlAOKYAAAAA:wvXMJ4nzbcW6CWGTJCREzIvR8vkxXe4rt7tlI1-k-_GANPG87nPv8Z2iaCQs0x_uVGlaPkbnLzMBuO4).
   - This paper proposed a hybrid model that combines the text of an article, the user response it receives, and the source users promoting it for a more accurate and automated prediction.
   - 这篇文章提出了一个混合模型，组合了文章的文本，用户的反馈，传播它的用户，来实现一个更准确自动的预测。
+- AAAI-2016 [News Verification by Exploiting Conflicting Social Viewpoints in Microblogs](https://ojs.aaai.org/index.php/AAAI/article/download/10382/10241)
+  - This paper proposed to exploit the conflicting viewpoints in microblogs to detect relations among news tweets and construct a credibility network of tweets with these relations. They detect fake news based on the graph.
+  - 这篇文章提出利用微博中的冲突观点来获取tweet之间的关系，并且构造一个信用网络。基于这个图来实现虚假新闻检测。
 
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
-### <span id="contents">News Contents</span> 新闻内容
+### <span id="content-base">News Contents</span> 新闻内容
 
 #### <span id="multi-modal">Multi-Modal</span> 多模态
 
