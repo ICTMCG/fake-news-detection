@@ -32,6 +32,9 @@ This repo is a collection of AWESOME things about fake news detection, including
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
 ### <span id="social">Social Context</span> 社交上下文
+- KDD-2021 [Causal Understanding of Fake News Dissemination on Social Media](http://www.cs.iit.edu/~kshu/files/kdd_causal.pdf)
+  - To mitigate negative impact of fake news, this paper argued that it is critical to understand what user attributes potentially cause users to share fake news.
+  - 为了减轻虚假新闻的负面影响，本文认为了解哪些用户属性可能导致用户分享假新闻至关重要。
 - SIGIR-2021 [User Preference-aware Fake News Detection](https://arxiv.org/pdf/2104.12259) [code](https://github.com/safe-graph/GNN-FakeNews)
   - A user is more likely to spread a piece of fake news when it confirms his/her existing beliefs/preferences. This paper studied the novel problem of exploiting user preference for fake news detection.
   - 用户更可能传播他感兴趣的虚假新闻。这篇文章研究一个新的问题，在虚假新闻检测中利用用户偏好信息。
@@ -60,6 +63,9 @@ This repo is a collection of AWESOME things about fake news detection, including
 
 #### <span id="multi-modal">Multi-Modal</span> 多模态
 
+- KDD-2021 [Multimodal Emergent Fake News Detection via Meta Neural Process Networks](https://arxiv.org/pdf/2106.13711.pdf)
+  - Significant challenges are posed for existing detection approaches to detect fake news on emergent events, where large-scale labeled datasets are difficult to obtain. This paper proposed an end-to-end fake news detection framework named MetaFEND, which is able to learn quickly to detect fake news on emergent events with a few verified posts.
+  - 现有的虚假新闻检测方法很难检测新出现的事件（很难获得样本）。这篇文章提出了一种MetaFEND的方法，可以基于少量验证过的帖子快速检测新出现的事件。
 - EMNLP-2020 [Detecting Cross-Modal Inconsistency to Defend Against Neural Fake News](https://www.aclweb.org/anthology/2020.emnlp-main.163.pdf).
   - This paper proposed a novel problem defence against neural fake news with images and captions. To circumvent this problem, they present DIDAN,which exploits possible semantic inconsistencies between the text and image/captions to detect machine-generated articles. 
   - 这篇文章提出了一个新的问题，如何防御带有图片和图片描述的虚假新闻。为了解决这个问题，他们提出了DIDAN，使用文本和图片、图片描述之间的语义一致性来检测机器生成的文章。
