@@ -167,16 +167,18 @@ This repo is a collection of AWESOME things about fake news detection, including
 
 - [FacebookHoax](https://github.com/gabll/some-like-it-hoax) [Some like it hoax: Automated fake news detection in social networks](https://arxiv.org/abs/1704.07506)
 - [BuzzFeedNews](https://github.com/BuzzFeedNews/2016-10-facebook-fact-check) [Hyperpartisan Facebook Pages Are Publishing False And Misleading Information At An Alarming Rate](https://www.buzzfeednews.com/article/craigsilverman/partisan-fb-pages-analysis)
-- [LIAR](https://www.cs.ucsb.edu/˜william/data/liar_dataset.zip) [Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data](https://www.aclweb.org/anthology/P17-2067.pdf) ACL2017
+- [LIAR (ACL2017)](https://www.cs.ucsb.edu/˜william/data/liar_dataset.zip) [Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data](https://www.aclweb.org/anthology/P17-2067.pdf)
 - [CoAID](https://github.com/cuilimeng/CoAID) [CoAID: COVID-19 Healthcare Misinformation Dataset](https://arxiv.org/pdf/2006.00885.pdf)
-- [FakeNewsNet](https://github.com/KaiDMML/FakeNewsNet) [FakeNewsNet: A Data Repository with News Content, Social Context, and Spatiotemporal Information for Studying Fake News on Social Media](https://arxiv.org/pdf/1809.01286) Big Data 2020
-- [FakeHealth](https://doi.org/10.5281/zenodo.3606757) [Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository](https://ojs.aaai.org/index.php/ICWSM/article/download/7350/7204/) AAAI2021
+- [FakeNewsNet (Journal of Big Data 2020)](https://github.com/KaiDMML/FakeNewsNet) [FakeNewsNet: A Data Repository with News Content, Social Context, and Spatiotemporal Information for Studying Fake News on Social Media](https://arxiv.org/pdf/1809.01286)
+- [FakeHealth (AAAI 2021)](https://doi.org/10.5281/zenodo.3606757) [Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository](https://ojs.aaai.org/index.php/ICWSM/article/download/7350/7204/)
 
 ---
 
 ## <span id="scholars">Distinguished Scholars in Fake News Detection</span> (虚假新闻检测领域杰出学者)
-- [Huan Liu](https://www.public.asu.edu/~huanliu/): Professor in Ira A. Fulton Schools of Engineering, Arizona State University. ACM/AAAI/AAAS/IEEE Fellow. [Google scholar](https://scholar.google.com.hk/citations?user=Dzf46C8AAAAJ&hl=zh-CN&oi=ao).
-- [Kai Shu](http://www.cs.iit.edu/~kshu/):  Assistant Professor in the Department of Computer Science at Illinois Institute of Technology. [Google scholar](https://scholar.google.com.hk/citations?user=-6bAV2cAAAAJ&hl=zh-CN).
-- [Juan Cao](http://people.ucas.ac.cn/~caojuan): Professor in Institute of Computing Technology, Chinese Academy of Science. [Google scholar](https://scholar.google.com.hk/citations?hl=zh-CN&user=fSBdNg0AAAAJ).
-- [Kyumin Lee](http://web.cs.wpi.edu/~kmlee/): Associate Professor, Computer Science, Worcester Polytechnic Institute. [Google scholar](https://scholar.google.com.hk/citations?user=zQKRsSEAAAAJ&hl=zh-CN&oi=sra).
-- [Reza Zafarani](http://reza.zafarani.net/): Assistant Professor, Department of Electrical Engineering and Computer Science, Syracuse University. [Google scholar](https://scholar.google.com.hk/citations?hl=zh-CN&user=l0h7wL0AAAAJ&view_op=list_works&sortby=pubdate).
+- [Huan Liu](https://www.public.asu.edu/~huanliu/): Professor, Arizona State University. ACM/AAAI/AAAS/IEEE Fellow. [[Google Scholar]](https://scholar.google.com/citations?user=Dzf46C8AAAAJ)
+- [Juan Cao](http://people.ucas.ac.cn/~caojuan): Professor, Institute of Computing Technology, Chinese Academy of Science. [[Google Scholar]](https://scholar.google.com/citations?user=fSBdNg0AAAAJ)
+- [Preslav Nakov](https://www.hbku.edu.qa/en/staff/dr-preslav-nakov): Principal Scientist, Qatar Computing Research Institute (QCRI), Hamad Bin Khalifa University. [[Google Scholar]](https://scholar.google.com/citations?user=DfXsKZ4AAAAJ)
+- [Kyumin Lee](http://web.cs.wpi.edu/~kmlee/): Associate Professor, Computer Science, Worcester Polytechnic Institute. [Google Scholar](https://scholar.google.com/citations?user=zQKRsSEAAAAJ)
+- [Kai Shu](http://www.cs.iit.edu/~kshu/):  Assistant Professor, Illinois Institute of Technology. [[Google Scholar]](https://scholar.google.com/citations?user=-6bAV2cAAAAJ)
+- [Jing Ma](https://majingcuhk.github.io/): Assistant Professor, Hong Kong Baptist University. [[Google Scholar]](https://scholar.google.com/citations?user=78Jby0EAAAAJ)
+- [Reza Zafarani](http://reza.zafarani.net/): Assistant Professor, Department of Electrical Engineering and Computer Science, Syracuse University. [[Google Scholar]](https://scholar.google.com/citations?user=l0h7wL0AAAAJ)
