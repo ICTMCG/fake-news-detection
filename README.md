@@ -145,7 +145,7 @@ This repo is a collection of AWESOME things about fake news detection, including
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
 ### <span id="transfer">Transfer Learning</span> 迁移学习
-- SIGIR-2021 [Generalizing to the Future: Mitigating Entity Bias in Fake News Detection](https://arxiv.org/abs/2204.09484). [Code](https://github.com/ICTMCG/ENDEF-SIGIR2022)
+- SIGIR-2022 [Generalizing to the Future: Mitigating Entity Bias in Fake News Detection](https://arxiv.org/abs/2204.09484). [Code](https://github.com/ICTMCG/ENDEF-SIGIR2022)
   - Existing fake news detection methods overlooked the unintended entity bias in the real-world data, which seriously influences models' generalization ability to future data. They propose an entity debiasing framework (ENDEF) which generalizes fake news detection models to the future data by mitigating entity bias from a cause-effect perspective. Based on the causal graph among entities, news contents, and news veracity, they separately model the contribution of each cause (entities and contents) during training. In the inference stage, they remove the direct effect of the entities to mitigate entity bias.
   - 现有的方法忽视了训练数据集中存在的实体偏差（entity bias）造成的负面影响，导致其在未来数据上泛化效果不佳。作者提出了一种简单有效的实体去偏方法：建立实体、新闻内容与新闻真实性标签之间的因果联系，在训练阶段分别建模实体和内容对新闻真实性的影响，在测试阶段直接移除基于实体预测新闻真实性的部分以去除实体偏差。
 - CIKM-2021 [MDFEND: Multi-domain Fake News Detection](https://dl.acm.org/doi/pdf/10.1145/3459637.3482139). [Code](https://github.com/kennqiang/MDFEND-Weibo21)
