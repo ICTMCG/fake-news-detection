@@ -145,6 +145,12 @@ This repo is a collection of AWESOME things about fake news detection, including
 <hr style="height:1px;border:none;border-top:1px dashed #DCDCDC;" />
 
 ### <span id="transfer">Transfer Learning</span> 迁移学习
+- SIGIR-2021 [Generalizing to the Future: Mitigating Entity Bias in Fake News Detection](https://arxiv.org/abs/2204.09484). [Code](https://github.com/ICTMCG/ENDEF-SIGIR2022)
+  - Existing fake news detection methods overlooked the unintended entity bias in the real-world data, which seriously influences models' generalization ability to future data. They propose an entity debiasing framework (ENDEF) which generalizes fake news detection models to the future data by mitigating entity bias from a cause-effect perspective. Based on the causal graph among entities, news contents, and news veracity, they separately model the contribution of each cause (entities and contents) during training. In the inference stage, they remove the direct effect of the entities to mitigate entity bias.
+  - 现有的方法忽视了训练数据集中存在的实体偏差（entity bias）造成的负面影响，导致其在未来数据上泛化效果不佳。作者提出了一种简单有效的实体去偏方法：建立实体、新闻内容与新闻真实性标签之间的因果联系，在训练阶段分别建模实体和内容对新闻真实性的影响，在测试阶段直接移除基于实体预测新闻真实性的部分以去除实体偏差。
+- CIKM-2021 [MDFEND: Multi-domain Fake News Detection](https://dl.acm.org/doi/pdf/10.1145/3459637.3482139). [Code](https://github.com/kennqiang/MDFEND-Weibo21)
+  - They first design a benchmark of fake news dataset for MFND with domain label annotated, namely Weibo21, which consists of 4,488 fake news and 4,640 real news from 9 different domains. They further propose an effective Multi-domain Fake News Detection Model (MDFEND) by utilizing a domain gate to aggregate multiple representations extracted by a mixture of experts. 
+  - 作者首先贡献一个多领域虚假新闻检测的数据集，包含领域标签，叫做Weibo21，包含4488条假新闻和4640条真新闻，共9个不同的领域。他们进一步提出一种高效的多领域虚假新闻检测模型，通过使用领域门控机制来聚合混合专家提取的多个表示。
 - AAAI-2021 [Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data](Embracing Domain Differences in Fake News: Cross-domain Fake News Detection using Multi-modal Data).
   - The performance of fake news detection methods generally drops if news records are coming from different domains, especially for domains that are unseen or rarely-seen during training. Under the setting of unknown domain label, this paper proposed a method to discover domain label and a domain-specific and domain-shared structure to detect fake news.
   - 如果新的记录来自不同领域，现有的虚假新闻检测方法效果会下降，尤其是该领域在训练时没有见过。在不知道领域标签的设定下，这篇文章提出了一个发现domain label的方法，以及一个领域特定和领域共享的结构来检测虚假新闻。
